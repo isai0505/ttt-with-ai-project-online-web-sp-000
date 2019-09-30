@@ -41,6 +41,7 @@ WIN_COMBINATIONS = [
   def winner
     if winning_combo = won?
       @winner = @board.cells[winning_combo.first]
+    elsif = nil
     end
   end
 
