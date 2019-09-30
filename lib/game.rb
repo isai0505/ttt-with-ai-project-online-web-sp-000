@@ -23,7 +23,15 @@ WIN_COMBINATIONS = [
   end
 
   def over?
-    
+
+  end
+
+  def won?
+
+  end
+
+  def draw?
+
   end
 
 end
