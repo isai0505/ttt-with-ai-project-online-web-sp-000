@@ -30,7 +30,6 @@ WIN_COMBINATIONS = [
     WIN_COMBINATIONS.detec do |winner|
       @board.cells[winner[0]] == @board.cells[winner[1]] &&
       @board.cells[winner[1]] == @board.cells[winner[2]]
-      [1, 4, 7]
     end
   end
 
