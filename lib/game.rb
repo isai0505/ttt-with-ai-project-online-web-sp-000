@@ -27,7 +27,7 @@ WIN_COMBINATIONS = [
   end
 
   def won?
-    
+    WIN_COMBINATIONS.detec do |winner|
   end
 
   def draw?
