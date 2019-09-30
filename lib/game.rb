@@ -28,7 +28,7 @@ WIN_COMBINATIONS = [
 
   def won?
     WIN_COMBINATIONS.detec do |winner|
-      @board.cells
+      @board.cells[winner[0]]
   end
 
   def draw?
