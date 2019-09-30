@@ -1,7 +1,7 @@
 class Game
   attr_accessor :board, :player_1, :player_2
 
-  def initialize (player_1, player_2, board)
+  def initialize (player_1 = Players::Human.new, player_2 = Players::Human.new, board)
 
   end
 
