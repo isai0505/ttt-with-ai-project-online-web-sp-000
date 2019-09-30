@@ -39,7 +39,9 @@ WIN_COMBINATIONS = [
   end
 
   def winner
-    
+    if a win combination = won?
+      return the piece that has won
+    end
   end
 
 end
