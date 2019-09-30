@@ -24,9 +24,10 @@ WIN_COMBINATIONS = [
 
 
   def won?
-    WIN_COMBINATIONS.detect do |winner|
-      @board.cells[winner[0]] == @board.cells[winner[1]] &&
-      @board.cells[winner[1]] == @board.cells[winner[2]]
+    WIN_COMBINATIONS.detect do |combo|
+      @board.cells[combo[0]] == @board.cells[combo[1]] &&
+      @board.cells[combo[1]] == @board.cells[combo[2]] &&
+      @board.taken?(combo[0]+1)
     end
   end
 
