@@ -27,7 +27,7 @@ WIN_COMBINATIONS = [
   end
 
   def won?
-
+    won? || draw?
   end
 
   def draw?
