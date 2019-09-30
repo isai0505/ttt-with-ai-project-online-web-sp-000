@@ -40,6 +40,7 @@ WIN_COMBINATIONS = [
 
   def winner
     if a win combination = won?
+      @winner = winner
       return the piece that has won
     end
   end
