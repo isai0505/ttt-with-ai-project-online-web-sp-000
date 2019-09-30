@@ -22,9 +22,6 @@ WIN_COMBINATIONS = [
     @board.turn_count % 2 == 0 ? player_1 : player_2
   end
 
-  def over?
-    won? || draw?
-  end
 
   def won?
     WIN_COMBINATIONS.detect do |winner|
@@ -35,6 +32,13 @@ WIN_COMBINATIONS = [
 
   def draw?
     @board.full? && !won?
+  end
+
+  def over?
+    won? || draw?
+  end
+
+  def winner
   end
 
 end
