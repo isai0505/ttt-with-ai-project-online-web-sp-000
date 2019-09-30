@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 ]
 
   def current_player
-    
+    @board.turn_count
   end
 
 
