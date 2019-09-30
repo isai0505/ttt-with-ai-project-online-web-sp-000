@@ -27,7 +27,6 @@ WIN_COMBINATIONS = [
     WIN_COMBINATIONS.detect do |winner|
       @board.cells[winner[0]] == @board.cells[winner[1]] &&
       @board.cells[winner[1]] == @board.cells[winner[2]]
-      @board.taken?(winner[0]+1)
     end
   end
 
