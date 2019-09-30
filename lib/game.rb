@@ -23,11 +23,11 @@ WIN_COMBINATIONS = [
   end
 
   def over?
-
+    won? || draw?
   end
 
   def won?
-    won? || draw?
+    
   end
 
   def draw?
